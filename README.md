@@ -1,2 +1,2 @@
 # template
-This is a sample template for an app 
+This is a sample template for an app - privacy policy, T&C, FAQ, Contact Us
