@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Helvetica';
+  color: #4d4e53;
+  line-height: 1.5;
+  background-color: white;
+  margin: 0; 
+  padding: 0;
+}
+
+header {
+  color: black;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+nav header{
+  text-align: center;
+}
+
+
+#navbar {
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#main-doc {
+  width: 75%;
+  height: 100vh;
+  margin: 20px;
+}
+
+
+.nav-link{
+  text-decoration: none;
+  font-family: 'Helvetica';
+  color: #4d4e53;
+  line-height: 1.5;
+  text-align: center;
+
+}
+
+#ul-navbar {
+  list-style-type: none;
+}
+
+#ul-navbar li {
+  border-top: 1px solid rgb(54, 143, 27);
+  border-right: 10px;
+  padding: 11px 0;
+  margin: 0;
+}
+code {
+  background-color: #f7f7f7;
+  display: block;
+  padding: 15px;
+  text-align: left;
+  width: 70%;
+  border-radius: 5px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: lightgoldenrodyellow;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: orange;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #f7f7f7;
+  display: none;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  #main-doc {
+    width: 100%;
+  }
+  #navbar{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+/* Basic styles for the button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+/* Show the button when the page is scrolled down */
+body.scrolled .scroll-to-top {
+  display: block;
+}
+
+/* Change color on hover */
+.scroll-to-top:hover {
+  background-color: #555;
+}
